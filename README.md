@@ -6,9 +6,6 @@ This repository contains the source code for the research paper *"Are fast test 
 
 This project investigates the tradeoffs between test speed and test sensitivity in contact tracing strategies for epidemic control. The code implements epidemiological simulations to evaluate different testing scenarios and their effectiveness in controlling disease spread.
 
-
-## Key Differences Between main.jl and main_Se.jl
-
 - **main.jl**: Implements simulations with **constant test sensitivity (baseline assumption)** 
 
 - **main_Se.jl**: Implements simulations with **viral load-dependent test sensitivity (Section IIIA)** 
@@ -37,16 +34,15 @@ The simulation scripts accept the following arguments in order:
 
 ## Output Files
 
-- Simulation results are saved in `code/outputsFinal/` with descriptive filenames including all parameter values
-- Output files contain columns for false negative test rates, tracing efficiency, infection counts, reproduction numbers, and other epidemiological metrics
+- Simulation results are saved in `code/outputsFinal/`
 - Offspring distribution data is stored in `code/offspringdistributions/`
 
 ## Visualization
 
 Use the provided Python and Jupyter notebook tools for data analysis and visualization:
 
-- `code/plot_definitions.py`: Python plotting utilities
-- `code/Plot_main.ipynb`: Interactive Jupyter notebook for result visualization
+- `code/plot_definitions.py`: useful definitions
+- `code/Plot_main.ipynb`: Jupyter notebook displaying the figures from the paper
 
 ## License
 
