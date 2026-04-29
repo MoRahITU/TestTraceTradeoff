@@ -15,7 +15,7 @@ InitialNumberOfInfected  = 100;      # Infectious at start
 MaximumAllowedInfected = 10000; # How many people will we maximally get?
 N = MaximumAllowedInfected; # For theoretical calculations
 
-NumberOfExperiments  = 5; # Number of experiments
+NumberOfExperiments  = 500; # Number of experiments
 
 # Epidemiological details
 AsymptomaticFractionOfInfected = parse(Float64, ARGS[3]);# Fraction of infected that never get symptoms. 
@@ -180,6 +180,7 @@ elapsed_time = @elapsed for TracingEfficiencyValueNumber = 1:linspace
         GoalOfCountDown_traced = vcat(GoalOfCountDown_traced_each...)
         timetraced_traced = vcat(timetraced_traced_each...)
         GoalOfCountDown_untraced = vcat(GoalOfCountDown_untraced_each...)
+        Ntrace = length(timetraced_traced)
 
 
         
