@@ -1,6 +1,6 @@
 # Test-Trace Tradeoff: Contact Tracing Strategies Analysis
 
-This repository contains the source code for the research paper *"Are fast test results preferable to high test sensitivity in contact-tracing strategies?"* by Jonas L. Juul and Morten R. Boilesen from IT University of Copenhagen and , Kaare Græsbøll from the Department of Data Science and AI in Health, Statens Serum Institut.
+This repository contains the source code for the research paper *"Are fast test results preferable to high test sensitivity in contact-tracing strategies?"* by Jonas L. Juul and Morten R. Boilesen from IT University of Copenhagen and Kaare Græsbøll from the Department of Data Science and AI in Health, Statens Serum Institut.
 
 ## Overview
 
@@ -9,9 +9,9 @@ This project investigates the tradeoffs between test speed and test sensitivity 
 
 ## Key Differences Between main.jl and main_Se.jl
 
-- **main.jl**: Implements simulations with **constant test sensitivity** - the probability of detecting infection remains fixed regardless of viral load or disease stage.
+- **main.jl**: Implements simulations with **constant test sensitivity (baseline assumption)** 
 
-- **main_Se.jl**: Implements simulations with **viral load-dependent test sensitivity** - the test sensitivity varies as a function of viral load, providing a more realistic representation of how diagnostic tests perform throughout the course of infection.
+- **main_Se.jl**: Implements simulations with **viral load-dependent test sensitivity (Section IIIA)** 
 
 ## Usage
 
