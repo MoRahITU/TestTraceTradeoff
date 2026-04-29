@@ -1,6 +1,6 @@
 # Test-Trace Tradeoff: Contact Tracing Strategies Analysis
 
-This repository contains the source code for the research paper *"Are fast test results preferable to high test sensitivity in contact-tracing strategies?"* by Jonas L. Juul and Morten R. Boilesen from IT University of Copenhagen and , Kaare Græsbøll from the Department of Data Science and AI in Health, Statens Serum Institut.
+This repository contains the source code for the research paper *"Are fast test results preferable to high test sensitivity in contact-tracing strategies?"* by Jonas L. Juul and Morten R. Boilesen from IT University of Copenhagen and Kaare Græsbøll from the Department of Data Science and AI in Health, Statens Serum Institut.
 
 ## Overview
 
