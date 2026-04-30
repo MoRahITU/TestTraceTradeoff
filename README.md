@@ -34,16 +34,14 @@ The simulation scripts accept the following arguments in order:
 
 ## Output Files
 
-- Simulation results are saved in `code/outputsFinal/`
+- Simulation results are saved in `code/outputs/`
 - Offspring distribution data is stored in `code/offspringdistributions/`
 
-## Visualization
+## Figures
 
 Use the provided Python and Jupyter notebook tools for data analysis and visualization:
 
 - `code/plot_definitions.py`: useful definitions
 - `code/Plot_main.ipynb`: Jupyter notebook displaying the figures from the paper
 
-## License
 
-Please refer to the publication and contact the authors for usage rights and licensing information.
