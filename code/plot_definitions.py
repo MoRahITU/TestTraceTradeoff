@@ -37,7 +37,7 @@ def get_contours(x,y,z,delays) :
             contours[key]['z'].append(z[i]-delays[key]['ydict'][y[i]])
     return contours
     
-def make_fig2(X,Y,Z,delays,interpolate = False,figname=None,heatmap='bwr',R_contours=[1], smooth_horizontally = True, testSensitivity = False) :
+def make_fig1(X,Y,Z,delays,interpolate = False,figname=None,heatmap='bwr',R_contours=[1], smooth_horizontally = True, testSensitivity = True) :
 
 
     # MAKE DEFINITIONS FOR PLOT
@@ -85,7 +85,7 @@ def make_fig2(X,Y,Z,delays,interpolate = False,figname=None,heatmap='bwr',R_cont
     # Import packages for plots
     #from mpl_toolkits.axes_grid.inset_locator import (inset_axes, InsetPosition,
     #                                                  mark_inset)
-    from matplotlib import cm
+
 
 
     # Fig 2
@@ -353,7 +353,8 @@ def make_fig2(X,Y,Z,delays,interpolate = False,figname=None,heatmap='bwr',R_cont
         ZZ = gaussian_filter(delays[key]['Z'],gauss_smooth)   
 
         ct=plt.contour(delays[key]['X'],delays[key]['Y'],ZZ,[0],cmap=cm.gray) 
-        plt.clabel(ct,ct.levels, inline=True, fmt='%s days'%key)
+        if i == 0:
+            plt.clabel(ct,ct.levels, inline=True, fmt='%s days'%key, fontsize=EVEN_SMALLER_SIZE)
 
     ax12.set_xlabel(x_label,fontsize=MEDIUM_SIZE)   
     
@@ -386,8 +387,8 @@ def make_fig2(X,Y,Z,delays,interpolate = False,figname=None,heatmap='bwr',R_cont
     box.x1 = box.x1 - 0.05
     ax2.set_position(box)  
     
-    
+    figNumber = '1'
     plt.savefig(f'FiguresFinal/{figname}.png',dpi=400)
     plt.savefig(f'FiguresFinal/{figname}.pdf',dpi=400)
     plt.savefig(f'FiguresFinal/{figname}.svg',dpi=400)
-    
+    plt.savefig(f'FiguresFinal/EPS/Fig{figNumber}.eps',dpi=400)   
